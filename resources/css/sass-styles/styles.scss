@@ -1,0 +1,22 @@
+@use 'landing_page';
+
+$font-family1: 'Agbalumo', system-ui;
+$font-family2: 'Poppins', sans-serif;
+$font-family3: 'Work Sans', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  text-rendering: optimizeLegibility;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+  border: 2px solid black;
+}
