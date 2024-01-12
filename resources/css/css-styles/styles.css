@@ -1,18 +1,44 @@
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(../img/laptop-2589693_1280.jpg) center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   background-color: #fff;
   text-rendering: optimizeLegibility;
+  font-size: 16px;
+  font-family: "Work Sans", "Arial", sans-serif;
+  font-weight: 300;
 }
 
 .row {
   max-width: 1140px;
   margin: 0 auto;
   border: 2px solid black;
+}
+
+h1 {
+  font-size: 500%;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 1%;
+}
+
+h2 {
+  font-size: 200%;
+  color: #fff;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=styles.css.map */

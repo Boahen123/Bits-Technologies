@@ -1,0 +1,16 @@
+header {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(../img/laptop-2589693_1280.jpg) center/ cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+// .headerbox {
+// }

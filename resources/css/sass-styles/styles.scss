@@ -1,8 +1,8 @@
-@use 'landing_page';
+@use 'landing-page';
 
 $font-family1: 'Agbalumo', system-ui;
 $font-family2: 'Poppins', sans-serif;
-$font-family3: 'Work Sans', sans-serif;
+$font-family3: 'Work Sans', 'Arial', sans-serif;
 
 * {
   margin: 0;
@@ -10,13 +10,32 @@ $font-family3: 'Work Sans', sans-serif;
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   background-color: #fff;
   text-rendering: optimizeLegibility;
+  font-size: 16px;
+  font-family: $font-family3;
+  font-weight: 300;
 }
 
 .row {
   max-width: 1140px;
   margin: 0 auto;
   border: 2px solid black;
+}
+
+@mixin font($size: size) {
+  font-size: $size;
+  color: #fff;
+  font-weight: 400;
+}
+
+h1 {
+  @include font(500%);
+  margin-bottom: 1%;
+}
+
+h2 {
+  @include font(200%);
 }
