@@ -1,8 +1,5 @@
 @use 'landing-page';
-
-$font-family1: 'Agbalumo', system-ui;
-$font-family2: 'Poppins', sans-serif;
-$font-family3: 'Work Sans', 'Arial', sans-serif;
+@use 'constants';
 
 * {
   margin: 0;
@@ -15,7 +12,7 @@ body {
   background-color: #fff;
   text-rendering: optimizeLegibility;
   font-size: 16px;
-  font-family: $font-family3;
+  font-family: constants.$font-family3;
   font-weight: 300;
 }
 
@@ -32,7 +29,7 @@ body {
 }
 
 h1 {
-  @include font(500%);
+  @include font(300%);
   margin-bottom: 1%;
 }
 

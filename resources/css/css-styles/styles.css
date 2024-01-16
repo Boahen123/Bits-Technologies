@@ -1,10 +1,65 @@
+nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  margin: 3%;
+}
+
+.menu li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-right: 20px;
+}
+.menu li a {
+  text-decoration: none;
+  color: white;
+}
+.menu li a:hover, .menu li a:visited {
+  border-bottom: 5px solid #be0692;
+  transition: border-bottom 0.2s;
+}
+
+.logo {
+  height: 120px;
+  width: auto;
+}
+
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(../img/laptop-2589693_1280.jpg) center/cover no-repeat;
   height: 100vh;
+}
+
+.headerbox {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.headerbox__text {
+  margin-bottom: 100px;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 100px;
+}
+
+.btn__full:link,
+.btn:visited {
+  background-color: #ed07b7;
+  color: white;
+}
+
+.btn__full:hover {
+  background-color: #be0692;
 }
 
 * {
@@ -29,7 +84,7 @@ body {
 }
 
 h1 {
-  font-size: 500%;
+  font-size: 300%;
   color: #fff;
   font-weight: 400;
   margin-bottom: 1%;

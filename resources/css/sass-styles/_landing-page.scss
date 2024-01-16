@@ -1,3 +1,36 @@
+@use 'constants';
+
+nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  margin: 3%;
+}
+
+.menu li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-right: 20px;
+  a {
+    text-decoration: none;
+    color: constants.$white;
+    &:hover,
+    &:visited {
+      border-bottom: 5px solid constants.$hover-color;
+      transition: border-bottom 0.2s;
+    }
+  }
+}
+
+.logo {
+  height: 120px;
+  width: auto;
+}
+
 header {
   background: linear-gradient(
       rgba(0, 0, 0, 0.3),
@@ -6,11 +39,33 @@ header {
     ),
     url(../img/laptop-2589693_1280.jpg) center/ cover no-repeat;
   height: 100vh;
+}
+
+.headerbox {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-// .headerbox {
-// }
+.headerbox__text {
+  margin-bottom: 100px;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 100px;
+}
+
+.btn__full:link,
+.btn:visited {
+  background-color: constants.$primary-color1;
+  color: constants.$white;
+}
+
+.btn__full:hover {
+  background-color: constants.$hover-color;
+}
