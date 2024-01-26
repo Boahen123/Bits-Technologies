@@ -1,0 +1,27 @@
+// styles for the portfolio section
+@use 'constants';
+
+.section__heading {
+  font-size: 250%;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.section__subheading {
+  font-size: 150%;
+  color: #555;
+  font-weight: 300;
+  margin-bottom: 30px;
+  &::after {
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: constants.$primary-color1;
+    content: ' ';
+    margin: 30px auto 0 auto;
+  }
+}
+
+.work-section {
+  text-align: center;
+}

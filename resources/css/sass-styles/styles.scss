@@ -1,5 +1,7 @@
 @use 'landing-page';
 @use 'constants';
+@use 'about';
+@use 'portfolio';
 
 * {
   margin: 0;
@@ -19,7 +21,7 @@ body {
 .row {
   max-width: 1140px;
   margin: 0 auto;
-  border: 2px solid black;
+  // border: 2px solid black;
 }
 
 @mixin font($size: size) {

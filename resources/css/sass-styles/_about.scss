@@ -1,0 +1,53 @@
+// styles for the about section
+
+@use 'constants';
+
+.laptop__image {
+  width: 85%;
+  margin: 20px;
+}
+
+.about {
+  margin-top: 50px;
+  // padding-bottom: 20px;
+}
+
+.about:first-child {
+  text-align: left;
+}
+
+.about:last-child {
+  text-align: right;
+}
+
+.about__heading {
+  color: black;
+  font-size: 200%;
+  letter-spacing: 2;
+  margin: 20px;
+}
+
+.about__text {
+  margin: 20px;
+  margin-bottom: 80px;
+}
+
+.read-more:link,
+.read-more:visited {
+  border: 2px solid constants.$primary-color1;
+  color: constants.$primary-color1;
+}
+
+.read-more {
+  margin: 20px;
+  margin-top: 100px;
+  text-decoration: none;
+  border: 2px solid constants.$primary-color1;
+  padding: 8px;
+  border-radius: 20px;
+  &:hover,
+  &:active {
+    background-color: constants.$hover-color;
+    color: constants.$white;
+  }
+}
