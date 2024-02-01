@@ -1,3 +1,46 @@
+@use 'constants';
+
 .testimonials-section {
   text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/pexels-luis-gomes-546819.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: constants.$white;
+}
+
+.testimonials__heading {
+  font-size: 250%;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.testimonial__box {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+blockquote {
+  padding: 2%;
+  font-size: 120%;
+  font-style: italic;
+  margin-bottom: 30px;
+  line-height: 125%;
+}
+
+blockquote:before {
+  content: '\201C';
+  display: block;
+  font-size: 300%;
+}
+
+cite {
+  display: block;
+  img {
+    height: 20%;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
 }
