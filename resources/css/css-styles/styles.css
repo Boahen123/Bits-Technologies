@@ -200,6 +200,14 @@ header {
   color: #ed07b7;
 }
 
+.clients-section {
+  text-align: center;
+}
+
+.client__logo {
+  width: 65%;
+}
+
 * {
   margin: 0;
   padding: 0;
