@@ -2,6 +2,7 @@
 @use 'constants';
 @use 'about';
 @use 'portfolio';
+@use 'services';
 
 * {
   margin: 0;
@@ -37,4 +38,16 @@ h1 {
 
 h2 {
   @include font(200%);
+}
+
+//  Clearfix
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  zoom: 1;
 }
