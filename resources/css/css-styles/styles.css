@@ -358,6 +358,75 @@ input[type=checkbox] {
   margin: 10px 5px;
 }
 
+footer {
+  background-color: #333;
+  padding: 50px;
+  font-size: 120%;
+  color: #888;
+}
+footer p {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-nav {
+  margin-bottom: 30px;
+  margin-right: 50px;
+  float: left;
+}
+.footer-nav li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited {
+  text-decoration: none;
+  color: #888;
+  transition: color 0.2s;
+}
+.footer-nav li a:active,
+.footer-nav li a:hover {
+  color: #fff;
+}
+
+.social-links {
+  float: right;
+}
+.social-links li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+}
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  color: #888;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram,
+.fa-linkedin {
+  transition: color 0.2s;
+}
+
+.fa-facebook:hover {
+  color: #1877f2;
+}
+
+.fa-twitter:hover {
+  color: #1877f2;
+}
+
+.fa-instagram:hover {
+  color: #c32aa3;
+}
+
+.fa-linkedin:hover {
+  color: #0a66c2;
+}
+
 * {
   margin: 0;
   padding: 0;
