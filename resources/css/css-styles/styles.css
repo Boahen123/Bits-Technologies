@@ -47,20 +47,24 @@ header {
 }
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
   text-decoration: none;
   padding: 10px 30px;
   border-radius: 100px;
   display: inline-block;
+  border: none;
 }
 
 .btn__full:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
   background-color: #ed07b7;
   color: white;
 }
 
-.btn__full:hover {
+.btn__full:hover,
+input[type=submit]:hover {
   background-color: #be0692;
 }
 
@@ -282,6 +286,7 @@ cite img {
   border: none;
   text-align: center;
   padding-left: 0;
+  padding-right: 0;
 }
 .pricing__box div:first-child {
   background-color: #fcfcfc;
@@ -326,6 +331,31 @@ cite img {
   margin-right: 10px;
   width: 30px;
   text-align: center;
+}
+
+.contact-section {
+  text-align: center;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #555;
+}
+
+.contact__form {
+  text-align: left;
+  width: 60%;
+  margin: 0 auto;
+  color: #555;
+  font-weight: 500;
+}
+
+input[type=checkbox] {
+  margin: 10px 5px;
 }
 
 * {

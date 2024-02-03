@@ -55,19 +55,23 @@ header {
 }
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type='submit'] {
   text-decoration: none;
   padding: 10px 30px;
   border-radius: 100px;
   display: inline-block;
+  border: none;
 }
 
 .btn__full:link,
-.btn:visited {
+.btn:visited,
+input[type='submit'] {
   background-color: constants.$primary-color1;
   color: constants.$white;
 }
 
-.btn__full:hover {
+.btn__full:hover,
+input[type='submit']:hover {
   background-color: constants.$hover-color;
 }

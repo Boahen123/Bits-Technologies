@@ -1,0 +1,26 @@
+@use 'constants';
+
+.contact-section {
+  text-align: center;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid constants.$light-grey;
+}
+
+.contact__form {
+  text-align: left;
+  width: 60%;
+  margin: 0 auto;
+  color: constants.$light-grey;
+  font-weight: 500;
+}
+
+input[type='checkbox'] {
+  margin: 10px 5px;
+}
